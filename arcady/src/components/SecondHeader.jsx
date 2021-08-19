@@ -171,8 +171,8 @@ const JobsNum = styled.div`
   position: absolute;
   background: #ed001d;
   border-radius: 50%;
-  width: 18px;
-  height: 19px;
+  width: 21px;
+  height: 21px;
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   display: flex;
@@ -222,6 +222,7 @@ const MenuOption = styled.div`
 `;
 const JobsNumMenu = styled(JobsNum)`
   position: absolute;
-  top: 37%;
+  top: 40%;
   right: 50%;
+  margin-right: -55px;
 `;
