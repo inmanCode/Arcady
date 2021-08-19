@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import styled from 'styled-components';
@@ -11,6 +11,20 @@ const Home = () => {
   } else {
     document.body.style.overflow = 'visible';
   }
+  const mediaQuery = window.matchMedia('(min-width: 1000px)');
+
+  useEffect(() => {
+    const handleTabletChange = (e) => {
+      if (e.matches) {
+        setMenu(false);
+        setSecMenu(false);
+      }
+    };
+    mediaQuery.addEventListener('change', handleTabletChange);
+    // Initial check
+    handleTabletChange(mediaQuery);
+  }, [mediaQuery]);
+
   return (
     <Conatiner Menu={Menu}>
       <Header
@@ -26,6 +40,7 @@ const Home = () => {
 };
 
 export default Home;
+
 const Conatiner = styled.div``;
 const Rb = styled.div`
   background: white;

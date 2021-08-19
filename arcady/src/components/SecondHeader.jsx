@@ -11,6 +11,7 @@ const Header = ({ setSecMenu, SecMenu }) => {
       setNavBar(false);
     }
   };
+
   window.addEventListener('scroll', changeNavBar);
   return (
     <>
