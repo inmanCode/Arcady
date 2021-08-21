@@ -3,7 +3,8 @@ import Header from '../components/Header';
 import Banner from '../components/Banner';
 import styled from 'styled-components';
 import RMSection from '../components/RMSection';
-
+import Servecies from './../components/Servecies';
+import Clients from './../components/Clients';
 const Home = () => {
   const [Menu, setMenu] = useState(false);
   const [SecMenu, setSecMenu] = useState(false);
@@ -36,6 +37,8 @@ const Home = () => {
       />
       <Banner />
       <RMSection />
+      <Servecies />
+      <Clients />
     </Conatiner>
   );
 };

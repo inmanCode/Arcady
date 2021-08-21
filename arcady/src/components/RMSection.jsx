@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 
 const RMSection = () => {
   return (
-    <Container>
+    <Container id='readmore'>
       <Title>
         Arcady houdt van
         <span>
@@ -53,6 +53,9 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  @media screen and (max-width: 1000px) {
+    font-size: 2em;
+  }
 `;
 const Title = styled.h1`
   color: #00a667;
@@ -65,12 +68,21 @@ const Title = styled.h1`
   width: 50%;
   margin: 0 auto;
   white-space: nowrap;
+  @media screen and (max-width: 1200px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 2rem;
+  }
   span {
     color: #333132;
     font-family: 'Montserrat', sans-serif;
     text-transform: capitalize;
     margin-left: 5px;
     font-size: 3.5rem;
+    @media screen and (max-width: 1000px) {
+      font-size: 2rem;
+    }
   }
 `;
 const Content = styled.div`
@@ -83,5 +95,8 @@ const Content = styled.div`
   font-family: 'Montserrat', sans-serif;
   p {
     padding: 20px 0;
+  }
+  @media screen and (max-width: 1000px) {
+    font-size: 16px;
   }
 `;

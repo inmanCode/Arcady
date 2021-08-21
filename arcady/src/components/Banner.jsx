@@ -18,7 +18,7 @@ const Banner = () => {
         <SecAnimatedText text='En jouw toekomst.' />
         <Button>Iets voor jou?</Button>
       </BannerContent>
-      <Icon>
+      <Icon href='#readmore'>
         <GoChevronDown size='5rem' color='#00a667' />
       </Icon>
     </Container>
@@ -118,7 +118,7 @@ const Button = styled.button`
     background-color: #008552;
   }
 `;
-const Icon = styled.div`
+const Icon = styled.a`
   position: absolute;
   bottom: 10px;
   left: 50%;
