@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import Header from '../components/Header';
 import Banner from '../components/Banner';
 import styled from 'styled-components';
+import RMSection from '../components/RMSection';
 
 const Home = () => {
   const [Menu, setMenu] = useState(false);
@@ -34,7 +35,7 @@ const Home = () => {
         setSecMenu={setSecMenu}
       />
       <Banner />
-      <Rb>rewqr</Rb>
+      <RMSection />
     </Conatiner>
   );
 };
@@ -42,7 +43,3 @@ const Home = () => {
 export default Home;
 
 const Conatiner = styled.div``;
-const Rb = styled.div`
-  background: white;
-  height: 100vh;
-`;

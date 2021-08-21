@@ -99,6 +99,7 @@ const Container = styled.div`
   z-index: 90;
   transition: top 0.5s ease;
   overflow: hidden;
+  border-bottom: 1px solid #f0f0f0;
 `;
 const Logo = styled.div`
   svg {
@@ -181,8 +182,8 @@ const JobsNum = styled.div`
   justify-content: center;
   font-weight: bolder;
   font-size: 15px;
-  top: 5px;
-  right: 8px;
+  top: 3px;
+  right: 6px;
   cursor: pointer;
 `;
 const HeaderMenuBtn = styled.div`

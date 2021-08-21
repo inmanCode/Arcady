@@ -200,8 +200,8 @@ const JobsNum = styled.div`
   justify-content: center;
   font-weight: bolder;
   font-size: 15px;
-  top: 5px;
-  right: 8px;
+  top: 3px;
+  right: 6px;
   cursor: pointer;
 `;
 const HeaderMenuBtn = styled.div`
